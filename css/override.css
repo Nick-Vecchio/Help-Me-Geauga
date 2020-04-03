@@ -1,0 +1,35 @@
+/*changes nav bar color to match logo font color*/
+.bg-dark {
+  background-color: #193678 !important;
+}
+
+.btn-outline-success {
+  color: #dbb129;
+  border-color: #dbb129;
+}
+
+.jumbotron {
+  padding: 0rem 0rem;
+  margin-bottom: 4rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 4rem 2rem;
+  }
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
