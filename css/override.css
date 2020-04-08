@@ -53,3 +53,7 @@ img.logo {
     width: 200px;
     height: auto;
 }
+
+.heading {
+	font-size: 2rem;
+}
