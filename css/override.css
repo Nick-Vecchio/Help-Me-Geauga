@@ -3,11 +3,13 @@
   background-color: #193678 !important;
 }
 
+/*used for search button color if implemented*/
 .btn-outline-success {
   color: #dbb129;
   border-color: #dbb129;
 }
 
+/*used for jumbotron if implemented*/
 .jumbotron {
   padding: 0rem 0rem;
   margin-bottom: 4rem;
@@ -27,6 +29,7 @@
   border-radius: 0;
 }
 
+/*ensures cards are even*/
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -34,6 +37,7 @@
   padding: 1.25rem;
 }
 
+/*adjusts navbar size settings*/
 .navbar{
     min-height: 100px;
 	max-height: 100px;
