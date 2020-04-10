@@ -37,23 +37,6 @@
   padding: 1.25rem;
 }
 
-/*adjusts navbar size settings*/
-.navbar{
-    min-height: 100px;
-	max-height: 100px;
-}
-ul.navbar-nav > li > a {
-    line-height: 100px;
-}
-.navbar-toggler {
-  margin-top: 30px;
-}
-img.logo {
-    padding-top:5em;
-    width: 200px;
-    height: auto;
-}
-
 .heading {
 	font-size: 2rem;
 }
