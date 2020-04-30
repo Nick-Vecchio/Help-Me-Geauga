@@ -23,6 +23,10 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+.mobile-space {margin-top:5px;}
+}
+
 .jumbotron-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -39,4 +43,8 @@
 
 .heading {
 	font-size: 2rem;
+}
+
+.hover-animate {
+	transition: all 0.2s ease-in-out;
 }
