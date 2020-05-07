@@ -56,3 +56,9 @@
 .fa-medkit {
 	color: red;
 }
+
+.btn-bd-download {
+	font-weight: 600;
+	color: #ffe484;
+	border-color: #ffe484;
+}
