@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Help Me Geauga Landing Page</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="css/override.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
 
   <body>
@@ -24,11 +25,11 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="government.html" id="government-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Government</a>
-			  <div class="dropdown-menu" aria-labelledby="government-dropdown">
-				  <a class="dropdown-item" href="government.html#state">State</a>
-				  <a class="dropdown-item" href="government.html#county">County</a>
-				  <a class="dropdown-item" href="government.html#local">Local</a>
-			  </div>
+            <div class="dropdown-menu" aria-labelledby="government-dropdown">
+              <a class="dropdown-item" href="government.html#state">State</a>
+              <a class="dropdown-item" href="government.html#county">County</a>
+              <a class="dropdown-item" href="government.html#local">Local</a>
+            </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="emergencyservices.html" id="emergency-services-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Emergency Services </a>
@@ -38,22 +39,23 @@
               <a class="dropdown-item" href="emergencyservices.html#ambulance">Ambulance</a>
             </div>
           </li>
-		  <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="healthandhumanservices.html" id="health-human-services-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Health and Human Services </a>
             <div class="dropdown-menu" aria-labelledby="health-human-services-dropdown">
               <a class="dropdown-item" href="healthandhumanservices.html#jobs">Jobs/Community Service</a>
               <a class="dropdown-item" href="healthandhumanservices.html#familychildren">Family and Children</a>
               <a class="dropdown-item" href="healthandhumanservices.html#seniors">Services for Seniors</a>
-			  <a class="dropdown-item" href="healthandhumanservices.html#mentalhealth">Mental Health</a>
-			  <a class="dropdown-item" href="healthandhumanservices.html#veterans">Veterans</a>
+              <a class="dropdown-item" href="healthandhumanservices.html#mentalhealth">Mental Health</a>
+              <a class="dropdown-item" href="healthandhumanservices.html#veterans">Veterans</a>
+              <a class="dropdown-item" href="healthandhumanservices.html#hospitals">Hospitals</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="food.html" id="food-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Food </a>
             <div class="dropdown-menu" aria-labelledby="food-dropdown">
-			  <a class="dropdown-item" href="food.html#foodbanks">Food Banks</a>
-              <a class="dropdown-item" href="food.html#restaurants">Restaurants</a>
-              <a class="dropdown-item" href="food.html#grocery">Grocery</a>
+              <a class="dropdown-item" href="food.html#foodbanks">Food Banks</a>
+              <a class="dropdown-item disabled" href="food.html#restaurants">Restaurants</a>
+              <a class="dropdown-item disabled" href="food.html#grocery">Grocery</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -65,10 +67,17 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">Recreation</a>
+            <a class="nav-link" href="recreation.html">Recreation</a>
           </li>
         </ul>
-<!--
+		  
+		  		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="directory.html">A-Z Directory</a>
+			</li>
+		  </ul>
+		  
+        <!--
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -81,55 +90,56 @@
         <li class="breadcrumb-item active" aria-current="page">Home</li>
       </ol>
     </nav>
-<!--
-    <div class="jumbotron jumbotron-fluid text-center">
-      <h1 class="display-4">Welcome to Help Me Geauga!</h1>
-      <p class="lead">Easily find all resources available to Geauga County residents&nbsp;</p>
-   
-      <p>To learn more about who we are and what we do click on Learn More&nbsp;</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </p>
-    </div>
--->
 
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
+    <a href="https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home">
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Coronavirus/COVID-19 Information:</strong> Click this for the latest updates
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </a>
 
-            <!-- Image -->
-            <img src="images/HelpMeGeaugaLogoVector.svg" alt="..." class="img-fluid mb-6 mb-md-0">
-
-          </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1">
-
-            <!-- Heading -->
-            <h2>
-              <span class="text-primary">Welcome to Help Me Geauga</span>
-            </h2>
-
-            <!-- Text -->
-            <p class="font-size-lg text-gray-700 mb-6">
-              Let us help you find the resources you need from Geauga County!
-            </p>
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    
-<br>
-	  <br>
-	  <br>
     <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+          <!-- Image -->
+          <img src="images/HelpMeGeaugaLogoVector.svg" alt="..." class="img-fluid mb-6 mb-md-0">
+
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 order-md-1">
+
+          <!-- Heading -->
+          <h2>
+            <span class="text-primary">Welcome to Help Me Geauga</span>
+          </h2>
+
+          <!-- Text -->
+          <p class="font-size-lg text-gray-700 mb-6">
+            Let us help you find the resources you need from Geauga County!
+          </p>
+			<br>
+			<div>
+				<a href="contactus.html"><h5 class="btn btn-outline-info">Contact Us</h5></a>
+			</div>
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+
+    <br>
+    <br>
+    <br>
+    <div class="container">
+		<div class="heading text-center text-uppercase">Popular Resources</div>
       <div class="card-deck">
         <div class="card hover-animate">
           <div class="card-header text-center">POLICE FIRE AMBULANCE</div>
-		  <a href="emergencyservices.html">
-          <img src="images/firepoliceemscardtop.svg" class="card-img-top img-fluid" alt="Card Image Cap">
-		  </a>
+            <img src="images/firepoliceemscardtop.svg" class="card-img-top img-fluid" alt="Police Fire Ambulance Logo">
           <div class="card-body text-center  d-flex align-items-end">
             <p class="card-text"><strong>Find important numbers for Geauga County's Fire Departments, Emergency Medical Services &amp; Police Departments</strong></p>
           </div>
-          <div class="card-footer text-center"> <a href="#" class="btn btn-primary stretched-link">Emergency Resources</a> </div>
+          <div class="card-footer text-center"> <a href="emergencyservices.html" class="btn btn-primary stretched-link">Emergency Resources</a> </div>
         </div>
         <div class="card">
           <div class="card-header text-center">EDUCATION</div>
@@ -137,7 +147,7 @@
           <div class="card-body text-center  d-flex align-items-end">
             <p class="card-text"><strong>Find information about the schools, colleges, and daycare in Geauga County</strong></p>
           </div>
-          <div class="card-footer text-center"> <a href="#" class="btn btn-primary stretched-link">Education Resources</a> </div>
+          <div class="card-footer text-center"> <a href="education.html" class="btn btn-primary stretched-link">Education Resources</a> </div>
         </div>
         <div class="card">
           <div class="card-header text-center">RECREATION</div>
@@ -145,7 +155,7 @@
           <div class="card-body text-center  d-flex align-items-end">
             <p class="card-text"><strong>Find information on parks &amp; recreation here</strong></p>
           </div>
-          <div class="card-footer text-center"> <a href="#" class="btn btn-primary stretched-link">Recreation Resources</a> </div>
+          <div class="card-footer text-center"> <a href="recreation.html" class="btn btn-primary stretched-link">Recreation Resources</a> </div>
         </div>
       </div>
       <br>
@@ -157,10 +167,8 @@
           <div class="card-body text-center  d-flex align-items-end">
             <!--            <h4 class="card-title">FIRE EMS POLICE&nbsp;&nbsp;</h4>-->
             <p class="card-text"><strong>Find Geauga County &amp; State of Ohio Government Resources</strong></p>
-
-
           </div>
-          <div class="card-footer text-center"> <a href="#" class="btn btn-primary stretched-link">Government Resources</a> </div>
+          <div class="card-footer text-center"> <a href="government.html" class="btn btn-primary stretched-link">Government Resources</a> </div>
         </div>
         <div class="card ">
           <div class="card-header text-center">MENTAL HEALTH</div>
@@ -169,7 +177,7 @@
             <!--            <h4 class="card-title">EDUCATION</h4>-->
             <p class="card-text"><strong>Find counseling services and mental health help resources here&nbsp;</strong></p>
           </div>
-          <div class="card-footer text-center"> <a href="#" class="btn btn-primary stretched-link">Mental Health Resources</a> 
+          <div class="card-footer text-center"> <a href="healthandhumanservices.html#mentalhealth" class="btn btn-primary stretched-link">Mental Health Resources</a>
           </div>
         </div>
         <div class="card">
@@ -179,71 +187,66 @@
           <img src="images/fruits-155616.svg" class="card-img-top img-fluid" alt="Card Image Cap">
           <div class="card-body text-center  d-flex align-items-end">
             <!--            <h4 class="card-title">FOOD</h4>-->
-            <p class="card-text ce"><strong>Find local restaurants, grocery stores, and foobanks here&nbsp;</strong></p>
+            <p class="card-text text-center"><strong>Find local restaurants, grocery stores, and foobanks here&nbsp;</strong></p>
           </div>
-          <div class="card-footer text-center"> <a href="#" class="btn btn-primary stretched-link">Food Resources</a> 
+          <div class="card-footer text-center"> <a href="food.html" class="btn btn-primary stretched-link">Food Resources</a>
           </div>
         </div>
       </div>
-      <!--
-      <div class="row text-center">
-        <div class="col-lg-6 offset-lg-3"><strong>POPULAR RESOURCES</strong></div>
-      </div>
--->
       <br>
       <hr>
 
       <br />
-      
+
       <br>
       <hr>
-      
 		
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-          <ul class="list-inline mb-2">
-            <li class="list-inline-item">
-              <a href="#">About</a>
-            </li>
-            <li class="list-inline-item">⋅</li>
-            <li class="list-inline-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="list-inline-item">⋅</li>
-            <li class="list-inline-item">
-              <a href="#">Accessibility Statement</a>
-            </li>
-            <li class="list-inline-item">⋅</li>
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-          </ul>
-          <p class="text-muted small mb-4 mb-lg-0">© Help Me Geauga 2020. All Rights Reserved.</p>
-        </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-facebook fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-instagram fa-2x fa-fw"></i>
-              </a>
-            </li>
-          </ul>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item">
+                <a href="#">Contact</a>
+              </li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item">
+                <a href="#">Accessibility Statement</a>
+              </li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">© Help Me Geauga 2020. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-twitter-square fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  
-    
+
+
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

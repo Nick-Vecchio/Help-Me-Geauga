@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Help Me Geauga Recreation</title>
+    <title>Contact Help Me Geauga</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css">
     <link href="css/override.css" rel="stylesheet" type="text/css" media="screen">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
@@ -21,10 +21,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home </a>
+            <a class="nav-link" href="index.html"> Home </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="government.html" id="government-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Government</a>
+            <a class="nav-link dropdown-toggle" href="government.html" id="government-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Government </a>
             <div class="dropdown-menu" aria-labelledby="government-dropdown">
               <a class="dropdown-item" href="government.html#state">State</a>
               <a class="dropdown-item" href="government.html#county">County</a>
@@ -66,16 +66,17 @@
               <a class="dropdown-item" href="education.html#daycare">Daycare</a>
             </div>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="recreation.html">Recreation <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="recreation.html">Recreation</a>
           </li>
-
         </ul>
+
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link">A-Z Directory</a>
+            <a class="nav-link active"> A-Z Directory</a>
           </li>
         </ul>
+
         <!--
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -87,7 +88,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Recreation</li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
       </ol>
     </nav>
 
@@ -99,97 +100,79 @@
         </button>
       </div>
     </a>
+	  
+	  
+	  <div class="container">
 
-    <div class="container">
-      <div class="row w-75">
-        <div class="col-lg-6 heading">Recreation</div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <div class="card shadow">
-            <img class="card-img-top" src="images/recreationoptimized.svg" height="200" alt="Generic Recreation Logo">
-            <div class="card-body">
-              <h4 class="card-title text-center">Burton Recreation and Ledgemont</h4>
-				<br>
-              Offers sporting activities for children that live in the Berkshire School District or who attend Berkshire schools.
-				<br>
-				<br>
-              <strong>Email:</strong> <a href="mailto:berkshirerecreation@yahoo.com">berkshirerecreation@yahoo.com</a>
-				<br>
-                <br>
-				<br>
-              <a href="https://www.berkshirerecreation.org" class="card-link" target="_blank">Berkshire Recreation Website</a>
-            </div>
-          </div>
+            <div class="row">
+
+                <div class="col-xl-8 offset-xl-2 py-5">
+
+                    <h1>Contact form for <a href="">Help Me Geauga</a></h1>
+
+                    <p class="lead">Please let us know if you have any feedback or questions.</p>
+
+                    
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Name *</label>
+                    <input id="form_name" type="text" name="txtName" class="form-control" placeholder="Please enter your name *" required="required" data-error="Firstname is required.">
+					<small id="first-name-help-block" class="form-text text-muted">A-Z (a-z) Letters only</small>
+                    <div class="help-block with-errors"></div>
+                </div>
+			</div>
         </div>
-        <div class="col-md-5">
-          <div class="card shadow">
-            <img class="card-img-top" src="images/recreationoptimized.svg" height="200" alt="Generic Recreation Logo">
-            <div class="card-body">
-              <h4 class="card-title text-center">Chardon Recreation</h4>
-            	<br>
-              	<strong>Recreation Director:</strong> Adam Rogers
-            	<br>
-            	<br>
-            	<br>
-              	<strong>Tel:</strong> <a href="tel:4402862630">(440) 286-2630</a>
-            	<br>
-            	<strong>Email:</strong> <a href="mailto:arogers@chardon.cc">arogers@chardon.cc</a>
-              	<br>
-              	<br>
-              	<br>
-              <a href="https://www.chardon.cc/179/Recreation-Department" class="card-link" target="_blank">Chardon Recreation Website</a>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="txtEmail" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+					<small id="email-help-block" class="form-text text-muted">Example: myinfo@email.com</small>
+                    <div class="help-block with-errors"></div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <div class="card shadow">
-            <img class="card-img-top" src="images/recreationoptimized.svg" height="200" alt="Geauga County Job and Family Services Logo">
-            <div class="card-body">
-              <h4 class="card-title text-center">Middlefield Recreation</h4><br>
-              	<strong>Recreation Director:</strong> Billie Warren
-              	<br>
-              	<br>
-              	<br>
-              	<a href="https://www.google.com/maps/search/?api=1&query=14860+North+State+Avenue+Middlefield+OH+44062">14860 North State Ave
-			  	<br>
-                Middlefield, OH 44062</a>
-			  	<br>
-              	<strong>Tel:</strong> <a href="tel:4406323526">(440) 632-3526</a>&nbsp;&nbsp;
-			  	<br>
-              	<br>
-              <a href=" https://www.middlefieldohio.com/recreation-parks-2/" class="card-link" target="_blank">Middlefield Recreation Website</a>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="txtMessage" class="form-control" placeholder="Message *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="card shadow">
-            <img class="card-img-top" src="images/recreationoptimized.svg" height="200" alt="Ohio Means Jobs Logo">
-            <div class="card-body">
-              <h4 class="card-title text-center">Newbury Joint Recreation Board</h4>
-			  	<br>
-              	Our commitment is to provide quality programs, bridgeing the gap in community and
-              	strengthening a sense of civic responsibilty.
-			  	<br>
-			  	<br>
-              	<strong>Tel:</strong> <a href="tel:4407490783">(440) 749-0783</a>&nbsp;
-			  	<br>
-              	<strong>Email:</strong><a href="mailto:NewburyJRB@gmail.com"> NewburyJRB@gmail.com</a>
-			  	<br>
-              	<br>
-              <a href="https://www.newburyrec.com/" class="card-link" target="_blank">Newbury Joint Recreation Board Website</a>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
             </div>
-          </div>
         </div>
-      </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">
+                    <strong>*</strong> These fields are required. 
+				</p>
+            </div>
+        </div>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+</form> 
+
+                </div>
+
+            </div>
+
+        </div>
+
+	  
+	      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
-
+</body>
 </html>

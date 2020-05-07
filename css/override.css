@@ -48,3 +48,11 @@
 .hover-animate {
 	transition: all 0.2s ease-in-out;
 }
+
+.fa-location-arrow, .fa-phone, .fa-fax, .fa-envelope {
+	color: goldenrod;
+}
+
+.fa-medkit {
+	color: red;
+}
