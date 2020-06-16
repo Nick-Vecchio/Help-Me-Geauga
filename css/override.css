@@ -16,7 +16,7 @@
 }
 
 .focus-visible {
-	outline: goldenrod solid 2px;
+	outline: solid gold 3px;
 }
 
 /*used for search button color if implemented*/
@@ -24,6 +24,18 @@
   color: #dbb129;
   border-color: #dbb129;
 }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #000000;
+  content: ">";
+}
+
+.breadcrumb-item.active {
+  color: #000000;
+}
+
 
 /*used for jumbotron if implemented*/
 .jumbotron {
