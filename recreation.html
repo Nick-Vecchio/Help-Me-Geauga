@@ -6,7 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Help Me Geauga Recreation</title>
-    <!-- Bootstrap -->
+	<!-- Description -->
+	<meta name="Description" content="The goal of Help Me Geauga is to uplift Geauga County residents by providing access to the remarkable resources that Geauga County offers.">
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon-32x32.png?" type="image/png" sizes="32x32">
+    <link rel="shortcut icon" href="favicon-16x16.png?" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png?"  sizes="180x180">
+<!--    <link rel="manifest" href="/site.webmanifest">-->
+    <!-- Bootstrap & Custom Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="css/override.css" rel="stylesheet" type="text/css" media="screen">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -69,20 +77,20 @@
             <a class="nav-link" href="recreation.html">Recreation <span class="sr-only">(current)</span></a>
           </li>
 
-        </ul>
-        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link btn btn-bd-download" href="directory.html">A-Z Directory</a>
           </li>
         </ul>
-        <!--
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+        <form class="form-inline my-2 my-lg-0" id="searchform" action="http://google.com/search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" maxlength="200">
+          <input name="q" type="hidden" value="site:nick-vecchio.github.io/HelpMeGeaugaBootStrap/">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
--->
+
       </div>
     </nav>
+
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#index.html">Home</a></li>

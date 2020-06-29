@@ -10,6 +10,7 @@
     <title>Help Me Geauga - Help for Geauga County Residents</title>
 	<!-- Description -->
 	<meta name="Description" content="The goal of Help Me Geauga is to uplift Geauga County residents by providing access to the remarkable resources that Geauga County offers.">
+	<link rel="canonical" href="https://helpmegeauga.com">
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon-32x32.png?" type="image/png" sizes="32x32">
@@ -78,20 +79,17 @@
           <li class="nav-item">
             <a class="nav-link" href="recreation.html">Recreation</a>
           </li>
-        </ul>
-
-        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link btn btn-bd-download" href="directory.html">A-Z Directory</a>
           </li>
         </ul>
 
-        <!--
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <form class="form-inline my-2 my-lg-0" id="searchform" action="http://google.com/search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" maxlength="200">
+          <input name="q" type="hidden" value="site:nick-vecchio.github.io/HelpMeGeaugaBootStrap/">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
--->
+
       </div>
     </nav>
     <nav aria-label="breadcrumb">
@@ -120,14 +118,10 @@
         <div class="col-12 col-md-7 col-lg-6 order-md-1">
 
           <!-- Heading -->
-          <h1>
-            <span class="text-primary">Welcome to Help Me Geauga</span>
-          </h1>
+          <h1 class="text-primary">Welcome to Help Me Geauga</h1>
 
           <!-- Text -->
-          <h3 class="font-size-md text-gray-700 mb-6">
-            Let us help you find the resources you need from Geauga County!
-          </h3>
+          <h2 class="font-size-md text-gray-700 mb-6">Let us help you find the resources you need from Geauga County!</h2>
           <br>
           <div>
             <a href="contactus.html">
@@ -142,7 +136,7 @@
     <br>
     <br>
     <div class="container">
-      <div class="heading text-center text-uppercase">Popular Resources</div>
+      <h4 class="heading text-center text-uppercase">Popular Resources</h4>
       <div class="card-deck">
         <div class="card hover-animate">
           <div class="card-header text-center">POLICE FIRE AMBULANCE</div>
@@ -154,7 +148,7 @@
         </div>
         <div class="card">
           <div class="card-header text-center">EDUCATION</div>
-          <img src="images/schoolbuilding.svg" class="card-img-top img-fluid" alt="Card Image Cap" height="180em" width="318em">
+          <img src="images/schoolbuilding.svg" class="card-img-top img-fluid" alt="Schoolhouse" height="180em" width="318em">
           <div class="card-body text-center  d-flex align-items-end">
             <p class="card-text"><strong>Find information about the schools and colleges in Geauga County</strong></p>
           </div>
@@ -162,7 +156,7 @@
         </div>
         <div class="card">
           <div class="card-header text-center">RECREATION</div>
-          <img src="images/recreation.svg" class="card-img-top img-fluid" alt="Card Image Cap" height="180em" width="318em">
+          <img src="images/recreation.svg" class="card-img-top img-fluid" alt="Parks and Recreation Logo" height="180em" width="318em">
           <div class="card-body text-center  d-flex align-items-end">
             <p class="card-text"><strong>Find information on parks &amp; recreation here</strong></p>
           </div>
@@ -174,7 +168,7 @@
       <div class="card-deck">
         <div class="card">
           <div class="card-header text-center">GOVERNMENT</div>
-          <img src="images/government.svg" class="card-img-top img-fluid" alt="Card Image Cap" height="180em" width="318em">
+          <img src="images/government.svg" class="card-img-top img-fluid" alt="Government Building Logo" height="180em" width="318em">
           <div class="card-body text-center  d-flex align-items-end">
             <!--            <h4 class="card-title">FIRE EMS POLICE&nbsp;&nbsp;</h4>-->
             <p class="card-text"><strong>Find Geauga County &amp; State of Ohio Government Resources</strong></p>
@@ -183,7 +177,7 @@
         </div>
         <div class="card ">
           <div class="card-header text-center">MENTAL HEALTH</div>
-          <img src="images/brain-2062057_1920.jpg" class="card-img-top img-fluid" alt="Card Image Cap" height="180em" width="318em">
+          <img src="images/brain-2062057_1920.jpg" class="card-img-top img-fluid" alt="Mental Health Logo" height="180em" width="318em">
           <div class="card-body text-center  d-flex align-items-end">
             <!--            <h4 class="card-title">EDUCATION</h4>-->
             <p class="card-text"><strong>Find counseling services and mental health help resources here&nbsp;</strong></p>
@@ -195,7 +189,7 @@
           <div class="card-header text-center">
             FOOD&nbsp;
           </div>
-          <img src="images/fruits-155616.svg" class="card-img-top img-fluid" alt="Card Image Cap" height="180em" width="318em">
+          <img src="images/fruits-155616.svg" class="card-img-top img-fluid" alt="Food Logo" height="180em" width="318em">
           <div class="card-body text-center  d-flex align-items-end">
             <!--            <h4 class="card-title">FOOD</h4>-->
             <p class="card-text text-center"><strong>Find information about Geauga County foodbanks here&nbsp;</strong></p>
@@ -214,7 +208,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <a class="img-fluid" href="index.html"><img src="images/HelpingHandsTree.jpg" alt="Logo with link to home page" width="70" height="100"></a>
+            <a class="img-fluid" href="index.html"><img src="images/HelpingHandsTree.jpg" alt="Footer Logo with link to home page" width="70" height="100"></a>
           </div>
 
           <div class="col-xs-6 col-md-3">

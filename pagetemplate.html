@@ -5,16 +5,44 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Help Me Geauga Home Page</title>
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="shortcut icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="shortcut icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-    <!-- Bootstrap -->
+    <title>Help Me Geauga Template Page</title>
+    <!-- Provide a short description of the page. -->
+    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+    <!-- This meta tag tells Google not to show the sitelinks search box. -->
+    <meta name="google" content="nositelinkssearchbox" />
+    <!-- Control the behavior of search engine crawling and indexing. 
+ The robots meta tag applies to all search engines, while the "googlebot" meta tag is specific to Google. -->
+    <meta name="robots" content="..., ..." />
+    <meta name="http-equiv" content="X-Robots-Tag : noindex, follow" />
+    <meta name="googlebot" content="..., ..." />
+    <!-- Used for verifying ownership of a site. -->
+    <meta name="verify" content="" />
+
+    <!-- Open Graph Meta Tags -->
+    <!-- Set the canonical URL for the page you are sharing. -->
+    <meta property="og:url" content="http://www.mySite.com/">
+    <!-- The title to accompany the URL. -->
+    <meta property="og:title" content="My Site" />
+    <!-- Provides Facebook the name that you would like your website to be recognized by. -->
+    <meta property="og:site_name" content="My Website">
+    <!-- Provides Facebook the type of website that you would like your website to be categorized by. -->
+    <meta property="og:type" content="website">
+    <!-- Defines the language, American English is the default. -->
+    <meta property="og:locale" content="en-IN">
+    <!-- Directs Facebook to use the specified image when the page is shared. -->
+    <meta property="og:image" content="image URL">
+    <!-- Similar to the meta description tag in HTML. This description is shown below the link title on Facebook. -->
+    <meta property="og:description" content="This is site description." />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-32x32.png?" type="image/png" sizes="32x32">
+    <link rel="shortcut icon" href="favicon-16x16.png?" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png?" sizes="180x180">
+    <!--    <link rel="manifest" href="/site.webmanifest">-->
+    <!-- Bootstrap & Custom Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="css/override.css" rel="stylesheet" type="text/css" media="screen">
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
 
   <body>
@@ -68,28 +96,26 @@
             <div class="dropdown-menu" aria-labelledby="education-dropdown">
               <a class="dropdown-item" href="education.html#schools">Schools</a>
               <a class="dropdown-item" href="education.html#college">College</a>
-			  <a class="dropdown-item disabled" href="education.html#daycare">Daycare</a>
+              <a class="dropdown-item disabled" href="education.html#daycare">Daycare</a>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="recreation.html">Recreation</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-bd-download" href="directory.html">A-Z Directory</a>
+          </li>
         </ul>
-		  
-		  		<ul class="navbar-nav ml-auto">
-		  <li class="nav-item">
-			<a class="nav-link btn btn-bd-download" href="directory.html">A-Z Directory</a>
-			</li>
-		  </ul>
-		  
-        <!--
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+        <form class="form-inline my-2 my-lg-0" id="searchform" action="http://google.com/search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" maxlength="200">
+          <input name="q" type="hidden" value="site:nick-vecchio.github.io/HelpMeGeaugaBootStrap/">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
--->
+
       </div>
     </nav>
+
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb position-sticky">
         <li class="breadcrumb-item active" aria-current="page">Home</li>
@@ -104,12 +130,12 @@
         </button>
       </div>
     </a>
-	  
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <!-- Site footer -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Site footer -->
     <footer class="site-footer">
       <div class="container">
         <div class="row">
@@ -138,7 +164,7 @@
           </div>
         </div>
       </div>
-</footer>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
