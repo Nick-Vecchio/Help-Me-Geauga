@@ -1,15 +1,13 @@
 // JavaScript Document
 // JavaScript code that should follow the search box code
   
-  // (must part)
-  
   // add a listener for form submission, i.e. when user hits Enter or
-  // clicks to any submit button form has
+  // clicks to any submit button form
   document.querySelector('.search-form').addEventListener('submit', function(e) {
-    // do not actually submit the form, we'll do something else :)
+    // do not actually submit the form, we'll do something else
     e.preventDefault();
     // read the search query for input tag, i.e. user searches
-    // for "django" let's say
+    // for "burton" 
     var q = document.querySelector('input[name="q"]').value;
     // just proceed if user has typed something
     if (q.length > 0) {
@@ -24,7 +22,7 @@
   // below is only used if you also want to put the search box
   // on the search results page it's useful when the user wants
   // to search something else directly and let user know
-  // what she is searching for at that moment
+  // what they are searching for at that moment
   
   // check if any hash parameter exists on the URL
   if (window.location.hash.length > 0) {
