@@ -1,6 +1,6 @@
 // JavaScript Document
 // JavaScript code that should follow the search box code
-  
+  $( document ).ready(function(){
   // add a listener for form submission, i.e. when user hits Enter or
   // clicks to any submit button form
   document.querySelector('.search-form').addEventListener('submit', function(e) {
@@ -37,3 +37,4 @@
       document.querySelector('input[name="q"]').value = q;
     }
   }
+});
